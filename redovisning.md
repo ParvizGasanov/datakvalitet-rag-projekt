@@ -123,3 +123,27 @@ Sedan tog vi bort eventuella dubbletter och fyllde saknade värden med “Okänt
 Till sist transformerade vi varje rad till en textbeskrivning. Det gjorde vi eftersom RAG-systemet behöver text för att kunna skapa dokument, chunks och embeddings.
 
 Den städade datan sparade vi som cleaned_data.csv.
+
+## 12. Abbes manus
+
+Jag ska berätta om själva RAG-delen.
+
+Först läste vi in den städade filen cleaned_data.csv.
+
+Sedan skapade vi LangChain-dokument av varje rad i datan. Varje dokument innehåller text från vår textkolumn och metadata, till exempel titel och radnummer.
+
+Efter det använde vi en text splitter för att dela upp dokumenten i mindre delar, som kallas chunks. Det gör det lättare för systemet att hitta rätt information.
+
+Sedan skapade vi embeddings. Embeddings betyder att texten görs om till numeriska värden så att datorn kan jämföra vilken text som är mest relevant för en fråga.
+
+Vi sparade embeddings i en vektordatabas med Chroma.
+
+Sedan skapade vi en retriever. Retrieverns uppgift är att hämta de mest relevanta textbitarna från vektordatabasen när användaren ställer en fråga.
+
+Eftersom vi just nu saknar en riktig API-nyckel använder vi en enkel test-embedding. Det gör att vi kan visa flödet, även om det inte är en fullständig LLM-lösning än.
+
+Vår demo-fråga är:
+
+"Which titles are about food?"
+
+Då visar systemet vilka dokument från vår data som matchar frågan bäst.
