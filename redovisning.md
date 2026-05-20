@@ -51,3 +51,25 @@ Vi har arbetat med:
 Just nu använder projektet en enkel test-embedding eftersom vi saknar riktig API-nyckel.
 
 När vi får en riktig API-nyckel kan vi byta till OpenAIEmbeddings och ChatOpenAI.
+
+## 8. Fördelning under redovisningen
+
+### Parviz
+Parviz presenterar projektets syfte, vår data och hur vi arbetade med datakvalitet.
+
+### Meridona
+Meridona presenterar preprocessing-delen: hur vi undersökte datan, tog bort problem och skapade cleaned_data.csv.
+
+### Abbe
+Abbe presenterar RAG-delen: dokument, chunks, embeddings, vektordatabas och retriever.
+
+## 9. Kort manus
+
+### Parviz säger:
+Vi har byggt ett enkelt RAG-system där användaren kan ställa frågor om vår egen CSV-data. Syftet är att visa hur datakvalitet påverkar hela kedjan från originaldata till svar från systemet.
+
+### Meridona säger:
+I preprocessing-notebooken började vi med att läsa in originaldatan. Vi kontrollerade saknade värden, dubbletter och kolumnnamn. Sedan skapade vi en städad version av datan som heter cleaned_data.csv.
+
+### Abbe säger:
+I RAG-notebooken gjorde vi om varje rad till dokument. Sedan delade vi upp dokumenten i mindre delar, skapade embeddings och sparade dem i en vektordatabas. Med retrievern kan systemet hämta relevant information när användaren ställer en fråga.
