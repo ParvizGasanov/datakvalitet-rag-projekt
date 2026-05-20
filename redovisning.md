@@ -99,3 +99,27 @@ Vår data ligger i en CSV-fil. Vi började med originaldata och skapade sedan en
 Syftet med projektet är att visa hur datakvalitet påverkar hela kedjan. Om datan har saknade värden, dubbletter eller otydliga kolumner kan systemet hämta fel information och ge sämre svar.
 
 Därför började vi med att kontrollera datan, rengöra den och transformera varje rad till text. Den texten kunde sedan användas i RAG-systemet.
+
+## 11. Meridonas manus
+
+Jag ska berätta om preprocessing-delen.
+
+Först läste vi in vår originaldata från filen original_data.csv med hjälp av pandas.
+
+Sedan undersökte vi datan genom att använda df.info(), df.isnull().sum() och df.duplicated().sum().
+
+Med df.info() kunde vi se vilka kolumner som fanns och vilka datatyper de hade.
+
+Med df.isnull().sum() kontrollerade vi om det fanns saknade värden.
+
+Med df.duplicated().sum() kontrollerade vi om det fanns dubbletter.
+
+Efter det skapade vi en kopia av datan som vi kallade cleaned_df.
+
+Vi städade kolumnnamnen genom att göra dem till små bokstäver, ta bort extra mellanslag och ersätta mellanslag med underscore.
+
+Sedan tog vi bort eventuella dubbletter och fyllde saknade värden med “Okänt”.
+
+Till sist transformerade vi varje rad till en textbeskrivning. Det gjorde vi eftersom RAG-systemet behöver text för att kunna skapa dokument, chunks och embeddings.
+
+Den städade datan sparade vi som cleaned_data.csv.
