@@ -32,3 +32,11 @@ CSV-data → rengöring → text → dokument → chunks → embeddings → vekt
 
 ## Viktigt
 .env-filen laddas inte upp till GitHub eftersom den kan innehålla API-nycklar.
+
+## Nuvarande status
+
+Projektet innehåller just nu en testversion av RAG-systemet. Eftersom vi inte har lagt in en riktig API-nyckel använder vi en enkel egen embeddings-klass för att kunna testa flödet:
+
+CSV → dokument → chunks → vektordatabas → retriever
+
+När vi får en riktig API-nyckel kan vi byta till OpenAIEmbeddings och ChatOpenAI för att få ett riktigt LLM-svar.
