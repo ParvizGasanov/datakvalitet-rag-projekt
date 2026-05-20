@@ -1,0 +1,41 @@
+id,title,type,country,release_year,genre,description,text
+1,The Food Journey,Movie,Sweden,2020,Documentary,A documentary about food culture in Sweden,"
+    Titel: The Food Journey
+    Typ: Movie
+    Land: Sweden
+    År: 2020
+    Genre: Documentary
+    Beskrivning: A documentary about food culture in Sweden
+    "
+2,Kitchen Secrets,TV Show,USA,2021,Reality,A show about restaurants and cooking,"
+    Titel: Kitchen Secrets
+    Typ: TV Show
+    Land: USA
+    År: 2021
+    Genre: Reality
+    Beskrivning: A show about restaurants and cooking
+    "
+3,Nordic Taste,Movie,Denmark,2019,Drama,A story about a chef in Copenhagen,"
+    Titel: Nordic Taste
+    Typ: Movie
+    Land: Denmark
+    År: 2019
+    Genre: Drama
+    Beskrivning: A story about a chef in Copenhagen
+    "
+4,Hotel Nights,TV Show,Sweden,2022,Drama,A series about life inside a hotel,"
+    Titel: Hotel Nights
+    Typ: TV Show
+    Land: Sweden
+    År: 2022
+    Genre: Drama
+    Beskrivning: A series about life inside a hotel
+    "
+5,Street Food Stories,Movie,Thailand,2023,Documentary,A documentary about street food and people,"
+    Titel: Street Food Stories
+    Typ: Movie
+    Land: Thailand
+    År: 2023
+    Genre: Documentary
+    Beskrivning: A documentary about street food and people
+    "
