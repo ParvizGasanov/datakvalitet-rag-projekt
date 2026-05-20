@@ -73,3 +73,29 @@ I preprocessing-notebooken började vi med att läsa in originaldatan. Vi kontro
 
 ### Abbe säger:
 I RAG-notebooken gjorde vi om varje rad till dokument. Sedan delade vi upp dokumenten i mindre delar, skapade embeddings och sparade dem i en vektordatabas. Med retrievern kan systemet hämta relevant information när användaren ställer en fråga.
+
+## 10. Parviz manus
+
+Hej, vi heter Parviz, Meridona och Abbe.
+
+Vi har byggt ett enkelt RAG-system i Python med hjälp av LangChain.
+
+RAG betyder Retrieval Augmented Generation. Det betyder att systemet inte bara svarar direkt från en språkmodell, utan först hämtar relevant information från vår egen data.
+
+Vår data ligger i en CSV-fil. Vi började med originaldata och skapade sedan en städad version som heter cleaned_data.csv.
+
+Syftet med projektet är att visa hur datakvalitet påverkar hela kedjan. Om datan har saknade värden, dubbletter eller otydliga kolumner kan systemet hämta fel information och ge sämre svar.
+
+Därför började vi med att kontrollera datan, rengöra den och transformera varje rad till text. Den texten kunde sedan användas i RAG-systemet.## 10. Parviz manus
+
+Hej, vi heter Parviz, Meridona och Abbe.
+
+Vi har byggt ett enkelt RAG-system i Python med hjälp av LangChain.
+
+RAG betyder Retrieval Augmented Generation. Det betyder att systemet inte bara svarar direkt från en språkmodell, utan först hämtar relevant information från vår egen data.
+
+Vår data ligger i en CSV-fil. Vi började med originaldata och skapade sedan en städad version som heter cleaned_data.csv.
+
+Syftet med projektet är att visa hur datakvalitet påverkar hela kedjan. Om datan har saknade värden, dubbletter eller otydliga kolumner kan systemet hämta fel information och ge sämre svar.
+
+Därför började vi med att kontrollera datan, rengöra den och transformera varje rad till text. Den texten kunde sedan användas i RAG-systemet.
