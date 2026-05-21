@@ -43,4 +43,4 @@ Systemet fungerar så här:
 
 CSV → dokument → chunks → Gemini embeddings → Chroma vektordatabas → retriever → prompt → Gemini LLM-svar
 
-API-nyckeln ligger lokalt i .env-filen och laddas inte upp till GitHub.
+API-nyckeln ligger lokalt i .env-filen och laddas inte upp till GitHub
