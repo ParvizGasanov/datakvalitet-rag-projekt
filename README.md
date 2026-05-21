@@ -35,8 +35,12 @@ CSV-data → rengöring → text → dokument → chunks → embeddings → vekt
 
 ## Nuvarande status
 
-Projektet innehåller just nu en testversion av RAG-systemet. Eftersom vi inte har lagt in en riktig API-nyckel använder vi en enkel egen embeddings-klass för att kunna testa flödet:
+## Nuvarande status
 
-CSV → dokument → chunks → vektordatabas → retriever
+Projektet innehåller nu en fungerande RAG-applikation med Gemini.
 
-När vi får en riktig API-nyckel kan vi byta till OpenAIEmbeddings och ChatOpenAI för att få ett riktigt LLM-svar.
+Systemet fungerar så här:
+
+CSV → dokument → chunks → Gemini embeddings → Chroma vektordatabas → retriever → prompt → Gemini LLM-svar
+
+API-nyckeln ligger lokalt i .env-filen och laddas inte upp till GitHub.
